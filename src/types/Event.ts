@@ -1,4 +1,5 @@
 import Image from './Image';
+import Location from './Location';
 
 interface Event {
   id: string;
@@ -6,11 +7,12 @@ interface Event {
   updatedAt: Date | null;
   image: Image;
   name: string;
+  headline: string | null;
   location: Location | null;
   about: string | null;
   dateOfEvent: Date;
   refundPolciy: string | null;
-  ticketType: TicketType;
+  ticketType: string;
   tags: string[];
   duration: Duration;
 }
@@ -20,9 +22,4 @@ export default Event;
 interface Duration {
   length: number;
   unit: string;
-}
-
-enum TicketType {
-  'Physical Ticket',
-  'E-Ticket',
 }
