@@ -8,7 +8,7 @@ const eventsData: Event[] = [
     name: 'Tribute to Hans Zimmer & John Williams by Moonlight: Edinburgh Late Concert',
     headline:
       "An immersive tribute to Hans Zimmer and John William's most iconic music with a live chamber orchestra in a moon-lit setting.",
-    refundPolciy: null,
+    refundPolicy: null,
     location: {
       id: '',
       createdAt: new Date(),
