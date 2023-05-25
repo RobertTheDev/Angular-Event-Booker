@@ -1,6 +1,6 @@
 export default interface Image {
   createdAt: Date;
-  updatedAt: Date;
+  updatedAt: Date | null;
   url: string;
   alt: string;
 }
