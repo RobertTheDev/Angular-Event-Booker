@@ -11,7 +11,7 @@ interface Event {
   location: Location | null;
   about: string | null;
   dateOfEvent: Date;
-  refundPolciy: string | null;
+  refundPolicy: string | null;
   ticketType: string;
   tags: string[];
   duration: Duration;
