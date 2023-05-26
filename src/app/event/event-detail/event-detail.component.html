@@ -1,23 +1,28 @@
-<img class="image" src="{{ event.image.url }}" alt="{{ event.image.alt }}" />
-<p>{{ event.name }}</p>
-<p>{{ event.headline }}</p>
-<p>{{ event.duration.length }} {{ event.duration.unit }}</p>
-<p>{{ event.ticketType }}</p>
-<p>{{ event.about }}</p>
-<p>{{ event.updatedAt }}</p>
-<p>{{ event.createdAt }}</p>
-<p>{{ event.dateOfEvent }}</p>
+<div *ngIf="!event">
+  <p>no event</p>
+</div>
+<div *ngIf="event">
+  <img class="image" src="{{ event.image.url }}" alt="{{ event.image.alt }}" />
+  <p>{{ event.name }}</p>
+  <p>{{ event.headline }}</p>
+  <p>{{ event.duration.length }} {{ event.duration.unit }}</p>
+  <p>{{ event.ticketType }}</p>
+  <p>{{ event.about }}</p>
+  <p>{{ event.updatedAt }}</p>
+  <p>{{ event.createdAt }}</p>
+  <p>{{ event.dateOfEvent }}</p>
 
-<div *ngFor="let tag of event.tags">
-  <p>{{ tag }}</p>
-</div>
-<div>
-  <p *ngIf="!event.refundPolicy">No refund Polciy</p>
-  <p *ngIf="event.refundPolicy">{{ event.refundPolicy }}</p>
-</div>
-<div>
-  <p>{{ event.location.address }}</p>
-  <p>{{ event.location.town }}</p>
-  <p>{{ event.location.region }}</p>
-  <p>{{ event.location.country }}</p>
+  <div *ngFor="let tag of event.tags">
+    <p>{{ tag }}</p>
+  </div>
+  <div>
+    <p *ngIf="!event.refundPolicy">No refund Polciy</p>
+    <p *ngIf="event.refundPolicy">{{ event.refundPolicy }}</p>
+  </div>
+  <!-- <div>
+    <p>{{ event.location.address }}</p>
+    <p>{{ event.location.town }}</p>
+    <p>{{ event.location.region }}</p>
+    <p>{{ event.location.country }}</p>
+  </div> -->
 </div>
