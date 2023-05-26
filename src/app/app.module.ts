@@ -6,10 +6,17 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EventModule } from './event/event.module';
 import { LayoutModule } from './layout/layout.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent],
-  imports: [BrowserModule, AppRoutingModule, EventModule, LayoutModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    EventModule,
+    LayoutModule,
+    AuthModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
