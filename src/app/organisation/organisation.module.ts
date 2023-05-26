@@ -6,5 +6,6 @@ import { OrganisationViewComponent } from './views/organisation-view/organisatio
 @NgModule({
   declarations: [OrganisationsViewComponent, OrganisationViewComponent],
   imports: [CommonModule],
+  exports: [OrganisationsViewComponent, OrganisationViewComponent],
 })
 export class OrganisationModule {}
