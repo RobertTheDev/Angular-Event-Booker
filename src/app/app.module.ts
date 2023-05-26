@@ -7,6 +7,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { EventModule } from './event/event.module';
 import { LayoutModule } from './layout/layout.module';
 import { AuthModule } from './auth/auth.module';
+import { OrganisationModule } from './organisation/organisation.module';
+import { InfoModule } from './info/info.module';
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent],
@@ -16,6 +18,8 @@ import { AuthModule } from './auth/auth.module';
     EventModule,
     LayoutModule,
     AuthModule,
+    InfoModule,
+    OrganisationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

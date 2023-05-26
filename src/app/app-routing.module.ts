@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventCardListComponent } from './event/components/lists/event-card-list/event-card-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignUpViewComponent } from './auth/views/sign-up-view/sign-up-view.component';
 import { LoginViewComponent } from './auth/views/login-view/login-view.component';
@@ -16,7 +15,7 @@ import { OrganisationsViewComponent } from './organisation/views/organisations-v
 const routes: Routes = [
   {
     path: '',
-    component: EventCardListComponent,
+    component: EventsViewComponent,
   },
   {
     path: 'auth',
@@ -39,7 +38,7 @@ const routes: Routes = [
         component: EventsViewComponent,
       },
       {
-        path: '/:id',
+        path: ':id',
         component: EventViewComponent,
       },
     ],
@@ -73,7 +72,7 @@ const routes: Routes = [
         component: OrganisationsViewComponent,
       },
       {
-        path: '/:id',
+        path: ':id',
         component: OrganisationViewComponent,
       },
     ],
