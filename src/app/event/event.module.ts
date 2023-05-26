@@ -6,6 +6,8 @@ import { EventCardListComponent } from './components/lists/event-card-list/event
 import { AppRoutingModule } from '../app-routing.module';
 import { EventsViewComponent } from './views/events-view/events-view.component';
 import { EventViewComponent } from './views/event-view/event-view.component';
+import { CreateEventFormComponent } from './components/forms/create-event-form/create-event-form.component';
+import { UpdateEventFormComponent } from './components/forms/update-event-form/update-event-form.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { EventViewComponent } from './views/event-view/event-view.component';
     EventDetailComponent,
     EventsViewComponent,
     EventViewComponent,
+    CreateEventFormComponent,
+    UpdateEventFormComponent,
   ],
   imports: [CommonModule, AppRoutingModule],
   exports: [EventsViewComponent, EventViewComponent],
