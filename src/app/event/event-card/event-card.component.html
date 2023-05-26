@@ -1,1 +1,6 @@
-<p>event-card works!</p>
+<a *ngIf="event" routerLink="/event/{{ event.id }}">
+  <div>
+    <img src="{{ event.image.url }}" alt="{{ event.image.alt }}" />
+    <p>{{ event.name }}</p>
+  </div></a
+>
