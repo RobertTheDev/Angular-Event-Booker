@@ -1,3 +1,6 @@
 <header>
   <a routerLink="/">Home</a>
+  <div *ngFor="let headerLink of headerLinks">
+    <a routerLink="{{ headerLink.href }}">{{ headerLink.name }}</a>
+  </div>
 </header>
