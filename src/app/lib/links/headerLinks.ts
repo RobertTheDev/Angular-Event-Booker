@@ -7,7 +7,7 @@ const headerLinks: {
     name: 'About',
   },
   {
-    href: '/',
+    href: '/events/organise-event',
     name: 'Organise An Event',
   },
   {
@@ -17,6 +17,10 @@ const headerLinks: {
   {
     href: '/auth/login',
     name: 'Login',
+  },
+  {
+    href: '/profile',
+    name: 'Profile',
   },
 ];
 
