@@ -1,4 +1,4 @@
-import Booking from 'src/types/Booking';
+import Booking from 'src/lib/types/Booking';
 
 const bookingsData: Booking[] = [];
 

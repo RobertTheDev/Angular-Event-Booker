@@ -1,4 +1,4 @@
-import User from 'src/types/User';
+import User from 'src/lib/types/User';
 
 const usersData: User[] = [
   {

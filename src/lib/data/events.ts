@@ -1,4 +1,4 @@
-import Event from 'src/types/Event';
+import Event from 'src/lib/types/Event';
 
 const eventsData: Event[] = [
   {

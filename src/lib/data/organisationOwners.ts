@@ -1,4 +1,4 @@
-import OrganisationOwner from 'src/types/OrganisationOwner';
+import OrganisationOwner from 'src/lib/types/OrganisationOwner';
 
 const organisationOwnersData: OrganisationOwner[] = [];
 
