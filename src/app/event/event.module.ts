@@ -8,6 +8,8 @@ import { EventsViewComponent } from './views/events-view/events-view.component';
 import { EventViewComponent } from './views/event-view/event-view.component';
 import { CreateEventFormComponent } from './components/forms/create-event-form/create-event-form.component';
 import { UpdateEventFormComponent } from './components/forms/update-event-form/update-event-form.component';
+import { OrganiseEventViewComponent } from './views/organise-event-view/organise-event-view.component';
+import { EditEventViewComponent } from './views/edit-event-view/edit-event-view.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,15 @@ import { UpdateEventFormComponent } from './components/forms/update-event-form/u
     EventViewComponent,
     CreateEventFormComponent,
     UpdateEventFormComponent,
+    OrganiseEventViewComponent,
+    EditEventViewComponent,
   ],
   imports: [CommonModule, AppRoutingModule],
-  exports: [EventsViewComponent, EventViewComponent],
+  exports: [
+    EventsViewComponent,
+    EventViewComponent,
+    OrganiseEventViewComponent,
+    EditEventViewComponent,
+  ],
 })
 export class EventModule {}
