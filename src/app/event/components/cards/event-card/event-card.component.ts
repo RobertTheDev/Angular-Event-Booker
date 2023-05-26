@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import Event from 'src/types/Event';
+import Event from 'src/lib/types/Event';
 
 @Component({
   selector: 'app-event-card',

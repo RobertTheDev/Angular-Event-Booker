@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventDetailComponent } from './event/event-detail/event-detail.component';
-import { EventCardListComponent } from './event/event-card-list/event-card-list.component';
+import { EventDetailComponent } from './event/components/details/event-detail/event-detail.component';
+import { EventCardListComponent } from './event/components/lists/event-card-list/event-card-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [

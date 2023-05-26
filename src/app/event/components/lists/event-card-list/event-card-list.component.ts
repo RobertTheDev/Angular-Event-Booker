@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EventService } from '../event.service';
-import Event from 'src/types/Event';
+import { EventService } from '../../../service/event.service';
+import Event from 'src/lib/types/Event';
 
 @Component({
   selector: 'app-event-card-list',
