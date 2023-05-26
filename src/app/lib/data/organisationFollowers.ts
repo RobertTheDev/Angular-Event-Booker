@@ -1,4 +1,4 @@
-import OrganisationFollower from 'src/lib/types/OrganisationFollower';
+import OrganisationFollower from 'src/app/lib/types/OrganisationFollower';
 
 const organisationFollowersData: OrganisationFollower[] = [];
 

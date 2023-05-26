@@ -1,4 +1,4 @@
-import Organisation from 'src/lib/types/Organisation';
+import Organisation from 'src/app/lib/types/Organisation';
 
 const organisationsData: Organisation[] = [
   {

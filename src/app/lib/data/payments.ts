@@ -1,4 +1,4 @@
-import Payment from 'src/lib/types/Payment';
+import Payment from 'src/app/lib/types/Payment';
 
 const paymentsData: Payment[] = [];
 

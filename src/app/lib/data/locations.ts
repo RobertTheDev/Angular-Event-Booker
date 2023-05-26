@@ -1,4 +1,4 @@
-import Location from 'src/lib/types/Location';
+import Location from 'src/app/lib/types/Location';
 
 const locationsData: Location[] = [];
 

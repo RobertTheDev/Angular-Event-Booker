@@ -1,4 +1,4 @@
-import FavouriteEvent from 'src/lib/types/FavouriteEvent';
+import FavouriteEvent from 'src/app/lib/types/FavouriteEvent';
 
 const favouriteEventsData: FavouriteEvent[] = [];
 
