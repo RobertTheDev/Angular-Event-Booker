@@ -11,6 +11,10 @@ import { TermsViewComponent } from './info/views/terms-view/terms-view.component
 import { AccessibilityStatementViewComponent } from './info/views/accessibility-statement-view/accessibility-statement-view.component';
 import { OrganisationViewComponent } from './organisation/views/organisation-view/organisation-view.component';
 import { OrganisationsViewComponent } from './organisation/views/organisations-view/organisations-view.component';
+import { ProfileViewComponent } from './profile/views/profile-view/profile-view.component';
+import { AccountSettingsViewComponent } from './profile/views/account-settings-view/account-settings-view.component';
+import { EditProfileViewComponent } from './profile/views/edit-profile-view/edit-profile-view.component';
+import { SavedEventsViewComponent } from './profile/views/saved-events-view/saved-events-view.component';
 
 const routes: Routes = [
   {
@@ -74,6 +78,27 @@ const routes: Routes = [
       {
         path: ':id',
         component: OrganisationViewComponent,
+      },
+    ],
+  },
+  {
+    path: 'profile',
+    children: [
+      {
+        path: '',
+        component: ProfileViewComponent,
+      },
+      {
+        path: 'account-settings',
+        component: AccountSettingsViewComponent,
+      },
+      {
+        path: 'edit-profile',
+        component: EditProfileViewComponent,
+      },
+      {
+        path: 'saved-events',
+        component: SavedEventsViewComponent,
       },
     ],
   },
