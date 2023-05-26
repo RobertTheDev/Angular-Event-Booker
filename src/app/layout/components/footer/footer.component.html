@@ -1,1 +1,7 @@
-<footer></footer>
+<footer>
+  <a
+    *ngFor="let footerLink of footerLinks"
+    routerLink="{{ footerLink.href }}"
+    >{{ footerLink.name }}</a
+  >
+</footer>
