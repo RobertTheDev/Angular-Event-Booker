@@ -4,6 +4,7 @@ import { SignUpViewComponent } from './views/sign-up-view/sign-up-view.component
 import { LoginViewComponent } from './views/login-view/login-view.component';
 import { SignUpFormComponent } from './components/forms/sign-up-form/sign-up-form.component';
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
     SignUpFormComponent,
     LoginFormComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   exports: [SignUpViewComponent, LoginViewComponent],
 })
 export class AuthModule {}
