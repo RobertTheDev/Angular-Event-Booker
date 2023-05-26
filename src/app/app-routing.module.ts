@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventDetailComponent } from './event/components/details/event-detail/event-detail.component';
 import { EventCardListComponent } from './event/components/lists/event-card-list/event-card-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignUpViewComponent } from './auth/views/sign-up-view/sign-up-view.component';
 import { LoginViewComponent } from './auth/views/login-view/login-view.component';
+import { EventViewComponent } from './event/views/event-view/event-view.component';
+import { EventsViewComponent } from './event/views/events-view/events-view.component';
 
 const routes: Routes = [
   {
@@ -25,8 +26,17 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'event/:id',
-    component: EventDetailComponent,
+    path: 'events',
+    children: [
+      {
+        path: '',
+        component: EventsViewComponent,
+      },
+      {
+        path: '/:id',
+        component: EventViewComponent,
+      },
+    ],
   },
   { path: '**', component: NotFoundComponent },
 ];
