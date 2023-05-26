@@ -15,6 +15,8 @@ import { ProfileViewComponent } from './profile/views/profile-view/profile-view.
 import { AccountSettingsViewComponent } from './profile/views/account-settings-view/account-settings-view.component';
 import { EditProfileViewComponent } from './profile/views/edit-profile-view/edit-profile-view.component';
 import { SavedEventsViewComponent } from './profile/views/saved-events-view/saved-events-view.component';
+import { OrganiseEventViewComponent } from './event/views/organise-event-view/organise-event-view.component';
+import { EditEventViewComponent } from './event/views/edit-event-view/edit-event-view.component';
 
 const routes: Routes = [
   {
@@ -44,6 +46,14 @@ const routes: Routes = [
       {
         path: ':id',
         component: EventViewComponent,
+      },
+      {
+        path: 'organise-event',
+        component: OrganiseEventViewComponent,
+      },
+      {
+        path: 'edit-event/:id',
+        component: EditEventViewComponent,
       },
     ],
   },
