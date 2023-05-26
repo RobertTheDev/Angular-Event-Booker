@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EventDetailComponent } from './event/event-detail/event-detail.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { EventModule } from './event/event.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
-  declarations: [AppComponent, EventDetailComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, NotFoundComponent],
+  imports: [BrowserModule, AppRoutingModule, EventModule, LayoutModule],
   providers: [],
   bootstrap: [AppComponent],
 })
