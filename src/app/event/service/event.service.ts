@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import eventsData from 'src/lib/data/events';
-import Event from 'src/lib/types/Event';
+import eventsData from 'src/app/lib/data/events';
+import Event from 'src/app/lib/types/Event';
 
 @Injectable({
   providedIn: 'root',
