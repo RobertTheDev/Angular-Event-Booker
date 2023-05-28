@@ -3,6 +3,10 @@ const headerLinks: {
   name: string;
 }[] = [
   {
+    href: '/',
+    name: 'Home',
+  },
+  {
     href: '/info/about',
     name: 'About',
   },
@@ -11,16 +15,8 @@ const headerLinks: {
     name: 'Organise An Event',
   },
   {
-    href: '/auth/sign-up',
-    name: 'Sign Up',
-  },
-  {
-    href: '/auth/login',
-    name: 'Login',
-  },
-  {
-    href: '/profile',
-    name: 'Profile',
+    href: '/events/find-events',
+    name: 'Find An Event',
   },
 ];
 
