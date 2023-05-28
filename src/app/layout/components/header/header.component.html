@@ -1,6 +1,24 @@
-<header>
-  <a routerLink="/">Home</a>
-  <div *ngFor="let headerLink of headerLinks">
-    <a routerLink="{{ headerLink.href }}">{{ headerLink.name }}</a>
+<header class="header-container">
+  <div class="header-left">
+    <a routerLink="/">
+      <img
+        class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Eventbrite_Logo.svg/2560px-Eventbrite_Logo.svg.png"
+      />
+    </a>
+  </div>
+  <div class="header-center">
+    <div *ngFor="let headerLink of headerLinks">
+      <a class="header-link" routerLink="{{ headerLink.href }}">{{
+        headerLink.name
+      }}</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <button class="primary-button" routerLink="/auth/sign-up">Sign Up</button>
+    <button class="primary-button" routerLink="/auth/login">Login</button>
+
+    <fa-icon class="icon-link" [icon]="faBars"></fa-icon>
+    <!-- <a routerLink="/profile">Profile</a> -->
   </div>
 </header>
