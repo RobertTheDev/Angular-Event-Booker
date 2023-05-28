@@ -1,0 +1,35 @@
+.footer
+    &-container
+        align-items: center
+        background-color: white
+        border-top: 1px solid lightgray
+        box-sizing: border-box
+        display: flex
+        gap: 10px
+        justify-content: center
+        width: 100%
+        flex-direction: column-reverse
+        height: auto
+        padding: 24px
+        @media only screen and (min-width: 640px)
+            flex-direction: row
+            height: 60px
+            padding: 0px 24px
+    &-left
+        display: flex
+        flex: 1
+        gap: 16px
+        justify-content: center
+        @media only screen and (min-width: 640px)
+           justify-content: flex-start
+    &-center
+        display: flex
+        flex: 2
+        gap: 16px
+        justify-content: center
+        flex-wrap: wrap
+    &-right
+        display: flex
+        flex: 1
+        gap: 16px
+        justify-content: flex-end
