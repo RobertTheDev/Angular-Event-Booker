@@ -10,6 +10,8 @@ import { CreateEventFormComponent } from './components/forms/create-event-form/c
 import { UpdateEventFormComponent } from './components/forms/update-event-form/update-event-form.component';
 import { OrganiseEventViewComponent } from './views/organise-event-view/organise-event-view.component';
 import { EditEventViewComponent } from './views/edit-event-view/edit-event-view.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,12 @@ import { EditEventViewComponent } from './views/edit-event-view/edit-event-view.
     OrganiseEventViewComponent,
     EditEventViewComponent,
   ],
-  imports: [CommonModule, AppRoutingModule],
+  imports: [
+    CommonModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgxSkeletonLoaderModule,
+  ],
   exports: [
     EventsViewComponent,
     EventViewComponent,
