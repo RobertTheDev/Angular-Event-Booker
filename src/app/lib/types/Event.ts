@@ -1,5 +1,6 @@
 import Image from './Image';
 import Location from './Location';
+import Organisation from './Organisation';
 
 interface Event {
   id: string;
@@ -12,9 +13,14 @@ interface Event {
   about: string | null;
   dateOfEvent: Date;
   refundPolicy: string | null;
+  price: {
+    total: number;
+    currencyUnit: string;
+  };
   ticketType: string;
   tags: string[];
   duration: Duration;
+  organisation: Organisation | null;
 }
 
 export default Event;

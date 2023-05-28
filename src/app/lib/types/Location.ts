@@ -4,7 +4,7 @@ interface Location {
   updatedAt: Date | null;
   address: string;
   town: string;
-  region: string;
+  region?: string;
   country: string;
 }
 
