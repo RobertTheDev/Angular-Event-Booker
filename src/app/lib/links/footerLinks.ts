@@ -11,6 +11,10 @@ const footerLinks: {
     name: 'Accessibility Statement',
   },
   {
+    href: '/info/cookie-policy',
+    name: 'Cookie Policy',
+  },
+  {
     href: '/info/privacy-policy',
     name: 'Privacy Policy',
   },
