@@ -17,6 +17,7 @@ import { EditProfileViewComponent } from './profile/views/edit-profile-view/edit
 import { SavedEventsViewComponent } from './profile/views/saved-events-view/saved-events-view.component';
 import { OrganiseEventViewComponent } from './event/views/organise-event-view/organise-event-view.component';
 import { EditEventViewComponent } from './event/views/edit-event-view/edit-event-view.component';
+import { CookiePolicyViewComponent } from './info/views/cookie-policy-view/cookie-policy-view.component';
 
 const routes: Routes = [
   {
@@ -63,6 +64,10 @@ const routes: Routes = [
       {
         path: 'about',
         component: AboutViewComponent,
+      },
+      {
+        path: 'cookie-policy',
+        component: CookiePolicyViewComponent,
       },
       {
         path: 'privacy-policy',
