@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import companyName from 'src/app/lib/constants/companyName';
 import footerLinks from 'src/app/lib/links/footerLinks';
 
@@ -13,4 +18,8 @@ export class FooterComponent {
   currentYear = new Date().getFullYear();
 
   companyName = companyName;
+
+  faFacebook = faFacebook;
+  faInstagram = faInstagram;
+  faTwitter = faTwitter;
 }

@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBell,
+  faHeart,
+  faTicket,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
 import companyName from 'src/app/lib/constants/companyName';
 import headerLinks from 'src/app/lib/links/headerLinks';
 
@@ -14,4 +19,7 @@ export class HeaderComponent {
   companyName = companyName;
 
   faBell = faBell;
+  faHeart = faHeart;
+  faUser = faUser;
+  faTicket = faTicket;
 }

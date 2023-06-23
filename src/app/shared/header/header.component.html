@@ -1,14 +1,32 @@
 <header class="header-container">
-  <a routerLink="/">
-    {{ companyName }}
-  </a>
-  <div *ngFor="let headerLink of headerLinks">
-    <a routerLink="{{ headerLink.href }}">{{ headerLink.name }}</a>
+  <div class="header-left-container">
+    <div class="header-logo-container">
+      <a class="header-logo-text" routerLink="/">
+        {{ companyName }}
+      </a>
+    </div>
+    <div class="header-links-container">
+      <div *ngFor="let headerLink of headerLinks">
+        <a routerLink="{{ headerLink.href }}">{{ headerLink.name }}</a>
+      </div>
+    </div>
   </div>
-  <button routerLink="/auth/sign-up">Sign Up</button>
-  <button routerLink="/auth/login">Login</button>
-  <button routerLink="/events/saved-events">Saved</button>
-  <button routerLink="/notifications">Notifications</button>
-  <fa-icon [icon]="faBell"></fa-icon>
-  <button routerLink="/profile">Profile</button>
+  <div class="header-right-container">
+    <div class="header-control-group">
+      <button class="header-control-button" routerLink="/profile">
+        <fa-icon [icon]="faBell"></fa-icon>
+      </button>
+      <button class="header-control-button" routerLink="/profile">
+        <fa-icon [icon]="faHeart"></fa-icon>
+      </button>
+      <button class="header-control-button" routerLink="/profile">
+        <fa-icon [icon]="faTicket"></fa-icon>
+      </button>
+      <button class="header-control-button" routerLink="/profile">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </button>
+    </div>
+    <!-- <button routerLink="/auth/sign-up">Sign Up</button>
+    <button routerLink="/auth/login">Login</button> -->
+  </div>
 </header>
