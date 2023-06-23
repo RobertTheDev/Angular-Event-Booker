@@ -11,9 +11,9 @@ import { OrganisationsModule } from './features/organisations/organisations.modu
 import { InfoModule } from './features/info/info.module';
 import { EventsModule } from './features/events/events.module';
 import { NotFoundModule } from './features/not-found/not-found.module';
-import { ProfileModule } from './features/profile/profile.module';
-import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './features/auth/auth.module';
+
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,7 +28,6 @@ import { AuthModule } from './features/auth/auth.module';
     InfoModule,
     EventsModule,
     NotFoundModule,
-    ProfileModule,
     SharedModule,
   ],
   providers: [],

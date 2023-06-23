@@ -1,1 +1,14 @@
-<header><p>logo</p></header>
+<header class="header-container">
+  <a routerLink="/">
+    {{ companyName }}
+  </a>
+  <div *ngFor="let headerLink of headerLinks">
+    <a routerLink="{{ headerLink.href }}">{{ headerLink.name }}</a>
+  </div>
+  <button routerLink="/auth/sign-up">Sign Up</button>
+  <button routerLink="/auth/login">Login</button>
+  <button routerLink="/events/saved-events">Saved</button>
+  <button routerLink="/notifications">Notifications</button>
+  <fa-icon [icon]="faBell"></fa-icon>
+  <button routerLink="/profile">Profile</button>
+</header>
