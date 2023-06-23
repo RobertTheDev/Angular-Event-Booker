@@ -1,1 +1,4 @@
-<p>home works!</p>
+<div *ngFor="let event of events" routerLink="events/{{ event.id }}">
+  <img src="{{ event.image.url }}" alt="{{ event.image.alt }}" />
+  <p>{{ event.name }}</p>
+</div>

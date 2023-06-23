@@ -5,13 +5,12 @@ import Organisation from './Organisation';
 interface Event {
   id: string;
   createdAt: Date;
-  updatedAt: Date | null;
   image: Image;
   name: string;
   headline: string | null;
   location: Location | null;
   about: string | null;
-  dateOfEvent: Date;
+  date: Date;
   refundPolicy: string | null;
   price: {
     total: number;

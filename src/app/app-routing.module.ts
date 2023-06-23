@@ -106,6 +106,7 @@ import { NotFoundRoutingModule } from './features/not-found/not-found.routing.mo
 import { HomeRoutingModule } from './features/home/home.routing.module';
 import { AuthRoutingModule } from './features/auth/auth.routing.module';
 import { InfoRoutingModule } from './features/info/info.routing.module';
+import { EventsRoutingModule } from './features/events/events.routing.module';
 
 const routes: Routes = [];
 
@@ -115,6 +116,7 @@ const routes: Routes = [];
     AuthRoutingModule,
     HomeRoutingModule,
     InfoRoutingModule,
+    EventsRoutingModule,
     NotFoundRoutingModule,
   ],
   exports: [RouterModule],
