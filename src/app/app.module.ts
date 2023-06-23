@@ -9,7 +9,6 @@ import { LayoutModule } from './layout/layout.module';
 import { AuthModule } from './auth/auth.module';
 import { OrganisationModule } from './organisation/organisation.module';
 import { InfoModule } from './info/info.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent],

@@ -5,7 +5,6 @@ import Event from 'src/app/lib/types/Event';
 @Component({
   selector: 'app-event-card-list',
   templateUrl: './event-card-list.component.html',
-  styleUrls: ['./event-card-list.component.sass'],
 })
 export class EventCardListComponent {
   events: Event[] = [];

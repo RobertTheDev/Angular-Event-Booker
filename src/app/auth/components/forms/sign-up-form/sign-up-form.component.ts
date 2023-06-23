@@ -4,7 +4,6 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-sign-up-form',
   templateUrl: './sign-up-form.component.html',
-  styleUrls: ['./sign-up-form.component.sass'],
 })
 export class SignUpFormComponent {
   constructor(private fb: FormBuilder) {}

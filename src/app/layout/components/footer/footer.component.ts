@@ -11,7 +11,6 @@ import companyName from 'src/app/lib/companyName';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.sass'],
 })
 export class FooterComponent {
   footerLinks = footerLinks;
