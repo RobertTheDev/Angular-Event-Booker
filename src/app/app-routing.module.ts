@@ -114,9 +114,9 @@ const routes: Routes = [];
   imports: [
     RouterModule.forRoot(routes),
     AuthRoutingModule,
+    EventsRoutingModule,
     HomeRoutingModule,
     InfoRoutingModule,
-    EventsRoutingModule,
     NotFoundRoutingModule,
   ],
   exports: [RouterModule],
