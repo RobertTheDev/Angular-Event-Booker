@@ -91,9 +91,11 @@
         </div>
       </div>
     </div>
-    <div *ngIf="!signedIn">
-      <button routerLink="/auth/sign-up">Sign Up</button>
-      <button routerLink="/auth/login">Login</button>
+    <div class="header-auth-button-group" *ngIf="!signedIn">
+      <button class="header-auth-button" routerLink="/auth/sign-up">
+        Sign Up
+      </button>
+      <button class="header-auth-button" routerLink="/auth/login">Login</button>
     </div>
   </div>
 </header>
