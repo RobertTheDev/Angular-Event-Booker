@@ -69,16 +69,13 @@
       <div class="header-control-container">
         <button
           class="header-control-button"
-          (mouseover)="handleMouseOver('profile')"
-          (mouseout)="handleMouseOut('profile')"
           routerLink="/profile"
+          (mouseover)="openProfileMenu()"
+          (mouseout)="closeProfileMenu()"
         >
           <fa-icon [icon]="faUser"></fa-icon>
         </button>
-        <div
-          class="header-control-name-container"
-          *ngIf="controlNameActive === 'profile'"
-        >
+        <div *ngIf="profileMenu" class="header-control-profile-menu-container">
           <p class="header-control-name-text">Profile</p>
         </div>
       </div>

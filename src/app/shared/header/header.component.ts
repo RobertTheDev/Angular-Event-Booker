@@ -25,6 +25,8 @@ export class HeaderComponent {
 
   controlNameActive: string | null = null;
 
+  profileMenu: boolean = false;
+
   handleMouseOver(controlName: string) {
     this.controlNameActive = controlName;
   }
@@ -33,5 +35,13 @@ export class HeaderComponent {
     if (this.controlNameActive === controlName) {
       this.controlNameActive = null;
     }
+  }
+
+  openProfileMenu() {
+    this.profileMenu = true;
+  }
+
+  closeProfileMenu() {
+    this.profileMenu = false;
   }
 }
