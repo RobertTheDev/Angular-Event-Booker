@@ -1,6 +1,14 @@
-.form-container
-    display: flex
-    flex-direction: column
-    width: 300px
-    padding: $spacer-md
-    background: $color-primary-500
+.auth-form
+    &-container
+        display: flex
+        flex-direction: column
+        width: 300px
+        padding: $spacer-md
+        background: $color-white
+        box-shadow: $shadow-lg
+        border-radius: $rounded-md
+        gap: $spacer-md
+    &-button
+        background: $color-primary-500
+    &-error-text
+        color: $color-danger-500

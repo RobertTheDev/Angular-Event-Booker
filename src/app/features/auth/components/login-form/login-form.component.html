@@ -1,7 +1,19 @@
 <p>Login</p>
-<form>
-  <input name="email" placeholder="Email Address" type="email" />
-  <input name="password" placeholder="Password" type="password" />
-  <button>Login</button>
+<form class="auth-form-container">
+  <input
+    class="auth-form-input"
+    name="email"
+    placeholder="Email Address"
+    type="email"
+  />
+  <p class="auth-form-error-text">Error</p>
+  <input
+    class="auth-form-input"
+    name="password"
+    placeholder="Password"
+    type="password"
+  />
+  <p class="auth-form-error-text">Error</p>
+  <button class="auth-form-button">Login</button>
   <a routerLink="/auth/sign-up">Sign Up</a>
 </form>
