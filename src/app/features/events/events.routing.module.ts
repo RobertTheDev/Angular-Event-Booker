@@ -17,6 +17,10 @@ const routes: Routes = [
         component: OrganiseEventComponent,
       },
       {
+        path: 'find-events',
+        component: EventsComponent,
+      },
+      {
         path: ':id',
         component: EventComponent,
       },
