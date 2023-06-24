@@ -12,26 +12,111 @@
     </div>
   </div>
 </div>
-<div class="event-card-row">
-  <div
-    class="event-card-container"
-    *ngFor="let event of events"
-    routerLink="events/{{ event.id }}"
-  >
-    <div class="event-card-image-container">
-      <img
-        class="event-card-image"
-        src="{{ event.image.url }}"
-        alt="{{ event.image.alt }}"
-      />
+
+<div class="event-card-row-container">
+  <p>Heading</p>
+  <div class="event-card-row">
+    <div
+      class="event-card-container"
+      *ngFor="let event of events"
+      routerLink="events/{{ event.id }}"
+    >
+      <div class="event-card-image-container">
+        <img
+          class="event-card-image"
+          src="{{ event.image.url }}"
+          alt="{{ event.image.alt }}"
+        />
+      </div>
+      <div class="event-card-content-container">
+        <p>{{ event.name }}</p>
+        <p>{{ event.startDate }}</p>
+        <p>{{ event.location.address }}</p>
+        <p>{{ event.price.total }}</p>
+        <p>{{ event.organisation.name }}</p>
+        <p>{{ event.organisation.totalFollowers }}</p>
+      </div>
     </div>
-    <div class="event-card-content-container">
-      <p>{{ event.name }}</p>
-      <p>{{ event.startDate }}</p>
-      <p>{{ event.location.address }}</p>
-      <p>{{ event.price.total }}</p>
-      <p>{{ event.organisation.name }}</p>
-      <p>{{ event.organisation.totalFollowers }}</p>
+  </div>
+</div>
+
+<div class="event-card-row-container">
+  <p>Heading</p>
+  <div class="event-card-row">
+    <div
+      class="event-card-container"
+      *ngFor="let event of events"
+      routerLink="events/{{ event.id }}"
+    >
+      <div class="event-card-image-container">
+        <img
+          class="event-card-image"
+          src="{{ event.image.url }}"
+          alt="{{ event.image.alt }}"
+        />
+      </div>
+      <div class="event-card-content-container">
+        <p>{{ event.name }}</p>
+        <p>{{ event.startDate }}</p>
+        <p>{{ event.location.address }}</p>
+        <p>{{ event.price.total }}</p>
+        <p>{{ event.organisation.name }}</p>
+        <p>{{ event.organisation.totalFollowers }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="event-card-row-container">
+  <p>Heading</p>
+  <div class="event-card-row">
+    <div
+      class="event-card-container"
+      *ngFor="let event of events"
+      routerLink="events/{{ event.id }}"
+    >
+      <div class="event-card-image-container">
+        <img
+          class="event-card-image"
+          src="{{ event.image.url }}"
+          alt="{{ event.image.alt }}"
+        />
+      </div>
+      <div class="event-card-content-container">
+        <p>{{ event.name }}</p>
+        <p>{{ event.startDate }}</p>
+        <p>{{ event.location.address }}</p>
+        <p>{{ event.price.total }}</p>
+        <p>{{ event.organisation.name }}</p>
+        <p>{{ event.organisation.totalFollowers }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="event-card-row-container">
+  <p>Heading</p>
+  <div class="event-card-row">
+    <div
+      class="event-card-container"
+      *ngFor="let event of events"
+      routerLink="events/{{ event.id }}"
+    >
+      <div class="event-card-image-container">
+        <img
+          class="event-card-image"
+          src="{{ event.image.url }}"
+          alt="{{ event.image.alt }}"
+        />
+      </div>
+      <div class="event-card-content-container">
+        <p>{{ event.name }}</p>
+        <p>{{ event.startDate }}</p>
+        <p>{{ event.location.address }}</p>
+        <p>{{ event.price.total }}</p>
+        <p>{{ event.organisation.name }}</p>
+        <p>{{ event.organisation.totalFollowers }}</p>
+      </div>
     </div>
   </div>
 </div>

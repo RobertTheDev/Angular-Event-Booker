@@ -3,7 +3,11 @@
         display: grid
         gap: $spacer-xl
         grid-template-columns: repeat(4, 1fr)
-        padding: $spacer-xl
+        &-container
+            display: flex
+            flex-direction: column
+            padding: $spacer-xl
+            gap: $spacer-xl
     &-container
         width: 100%
         box-shadow: $shadow-lg
