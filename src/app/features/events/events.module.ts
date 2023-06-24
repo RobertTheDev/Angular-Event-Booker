@@ -5,5 +5,6 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [],
   imports: [CommonModule, RouterModule],
+  exports: [],
 })
 export class EventsModule {}
