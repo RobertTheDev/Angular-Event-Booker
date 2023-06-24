@@ -15,18 +15,73 @@
   </div>
   <div class="header-right-container">
     <div class="header-control-group">
-      <button class="header-control-button" routerLink="/profile">
-        <fa-icon [icon]="faBell"></fa-icon>
-      </button>
-      <button class="header-control-button" routerLink="/profile">
-        <fa-icon [icon]="faHeart"></fa-icon>
-      </button>
-      <button class="header-control-button" routerLink="/profile">
-        <fa-icon [icon]="faTicket"></fa-icon>
-      </button>
-      <button class="header-control-button" routerLink="/profile">
-        <fa-icon [icon]="faUser"></fa-icon>
-      </button>
+      <div class="header-control-container">
+        <button
+          class="header-control-button"
+          (mouseover)="handleMouseOver('notifications')"
+          (mouseout)="handleMouseOut('notifications')"
+          routerLink="/profile"
+        >
+          <fa-icon [icon]="faBell"></fa-icon>
+        </button>
+        <div
+          class="header-control-name-container"
+          *ngIf="controlNameActive === 'notifications'"
+        >
+          <p class="header-control-name-text">Notifications</p>
+        </div>
+      </div>
+
+      <div class="header-control-container">
+        <button
+          class="header-control-button"
+          (mouseover)="handleMouseOver('likes')"
+          (mouseout)="handleMouseOut('likes')"
+          routerLink="/profile"
+        >
+          <fa-icon [icon]="faHeart"></fa-icon>
+        </button>
+        <div
+          class="header-control-name-container"
+          *ngIf="controlNameActive === 'likes'"
+        >
+          <p class="header-control-name-text">Likes</p>
+        </div>
+      </div>
+
+      <div class="header-control-container">
+        <button
+          class="header-control-button"
+          (mouseover)="handleMouseOver('tickets')"
+          (mouseout)="handleMouseOut('tickets')"
+          routerLink="/profile"
+        >
+          <fa-icon [icon]="faTicket"></fa-icon>
+        </button>
+        <div
+          class="header-control-name-container"
+          *ngIf="controlNameActive === 'tickets'"
+        >
+          <p class="header-control-name-text">Tickets</p>
+        </div>
+      </div>
+
+      <div class="header-control-container">
+        <button
+          class="header-control-button"
+          (mouseover)="handleMouseOver('profile')"
+          (mouseout)="handleMouseOut('profile')"
+          routerLink="/profile"
+        >
+          <fa-icon [icon]="faUser"></fa-icon>
+        </button>
+        <div
+          class="header-control-name-container"
+          *ngIf="controlNameActive === 'profile'"
+        >
+          <p class="header-control-name-text">Profile</p>
+        </div>
+      </div>
     </div>
     <!-- <button routerLink="/auth/sign-up">Sign Up</button>
     <button routerLink="/auth/login">Login</button> -->

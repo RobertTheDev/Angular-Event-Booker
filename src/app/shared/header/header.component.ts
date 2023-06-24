@@ -22,4 +22,16 @@ export class HeaderComponent {
   faHeart = faHeart;
   faUser = faUser;
   faTicket = faTicket;
+
+  controlNameActive: string | null = null;
+
+  handleMouseOver(controlName: string) {
+    this.controlNameActive = controlName;
+  }
+
+  handleMouseOut(controlName: string) {
+    if (this.controlNameActive === controlName) {
+      this.controlNameActive = null;
+    }
+  }
 }
