@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { AccessibilityStatementComponent } from './accessibility-statement/accessibility-statement.component';
 
 const routes: Routes = [
   {
@@ -10,22 +14,22 @@ const routes: Routes = [
         path: 'about',
         component: AboutComponent,
       },
-      //   {
-      //     path: 'cookie-policy',
-      //     component: CookiePolicyViewComponent,
-      //   },
-      //   {
-      //     path: 'privacy-policy',
-      //     component: PrivacyPolicyViewComponent,
-      //   },
-      //   {
-      //     path: 'terms-and-conditions',
-      //     component: TermsViewComponent,
-      //   },
-      //   {
-      //     path: 'accessibility-statement',
-      //     component: AccessibilityStatementViewComponent,
-      //   },
+      {
+        path: 'cookie-policy',
+        component: CookiePolicyComponent,
+      },
+      {
+        path: 'privacy-policy',
+        component: PrivacyPolicyComponent,
+      },
+      {
+        path: 'terms-and-conditions',
+        component: TermsAndConditionsComponent,
+      },
+      {
+        path: 'accessibility-statement',
+        component: AccessibilityStatementComponent,
+      },
     ],
   },
 ];
