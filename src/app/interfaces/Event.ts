@@ -17,7 +17,6 @@ interface Event {
     currencyUnit: string;
   };
   ticketType: string;
-  tags: string[];
   duration: Duration;
   organisation: Organisation | null;
 }
