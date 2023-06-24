@@ -5,9 +5,11 @@
         {{ companyName }}
       </a>
     </div>
-    <div class="header-links-container">
+    <div class="header-link-group">
       <div *ngFor="let headerLink of headerLinks">
-        <a routerLink="{{ headerLink.href }}">{{ headerLink.name }}</a>
+        <a class="header-link" routerLink="{{ headerLink.href }}">{{
+          headerLink.name
+        }}</a>
       </div>
     </div>
   </div>

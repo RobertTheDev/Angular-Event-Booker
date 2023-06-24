@@ -73,8 +73,13 @@
             font-weight: 600
         &-container
 
-    &-links
-        &-container
+    &-link
+        color: $color-neutral-600
+        transition-duration: 0.2s
+        &:hover
+            color: $color-primary-600
+
+        &-group
             display: flex
             justify-content: center
             gap: $spacer-xl
