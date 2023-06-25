@@ -3,11 +3,6 @@ const profileMenuLinks: {
   name: string;
 }[] = [
   {
-    href: '/profile',
-    name: 'My Profile',
-  },
-
-  {
     href: '/profile/my-events',
     name: 'Manage Events',
   },
@@ -22,10 +17,6 @@ const profileMenuLinks: {
   {
     href: '/account-settings',
     name: 'Account Settings',
-  },
-  {
-    href: '/log-out',
-    name: 'Log Out',
   },
 ];
 
