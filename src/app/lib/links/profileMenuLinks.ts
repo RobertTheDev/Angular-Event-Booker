@@ -12,14 +12,13 @@ const profileMenuLinks: {
     name: 'Manage Events',
   },
   {
-    href: '/profile/my-organisation',
+    href: '/profile/my-organisations',
     name: 'Manage Organisations',
   },
   {
     href: '/profile/my-tickets',
     name: 'Tickets',
   },
-
   {
     href: '/account-settings',
     name: 'Account Settings',
