@@ -6,17 +6,23 @@ import { MyBookingsComponent } from './my-bookings/my-bookings.component';
 import { MyEventsComponent } from './my-events/my-events.component';
 import { MyOrganisationsComponent } from './my-organisations/my-organisations.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SavedEventsComponent } from './saved-events/saved-events.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { LikesComponent } from './likes/likes.component';
+import { FollowingComponent } from './following/following.component';
+import { MyTicketsComponent } from './my-tickets/my-tickets.component';
 
 @NgModule({
   declarations: [
     AccountSettingsComponent,
     EditProfileComponent,
+    FollowingComponent,
+    LikesComponent,
     MyBookingsComponent,
     MyEventsComponent,
     MyOrganisationsComponent,
+    MyTicketsComponent,
     ProfileComponent,
-    SavedEventsComponent,
+    NotificationsComponent,
   ],
   imports: [CommonModule],
 })
