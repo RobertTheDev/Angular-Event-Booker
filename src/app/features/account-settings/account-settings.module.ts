@@ -6,9 +6,11 @@ import { AddPaymentCardComponent } from './views/add-payment-card/add-payment-ca
 import { LinkedAccountsComponent } from './views/linked-accounts/linked-accounts.component';
 import { CloseAccountComponent } from './views/close-account/close-account.component';
 import { AccountInfoComponent } from './views/account-info/account-info.component';
+import { AccountSettingsMenuComponent } from './components/account-settings-menu/account-settings-menu.component';
 
 @NgModule({
   declarations: [
+    AccountSettingsMenuComponent,
     ChangeEmailComponent,
     ChangePasswordComponent,
     AddPaymentCardComponent,
