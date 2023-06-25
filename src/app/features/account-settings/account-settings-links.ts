@@ -1,6 +1,6 @@
 const accountSettingsLinks = [
   {
-    href: '/account-settings/account-info',
+    href: '/account-settings',
     name: 'Account Information',
   },
   {
@@ -8,19 +8,19 @@ const accountSettingsLinks = [
     name: 'Add Payment Card',
   },
   {
-    href: '/change-email/',
+    href: '/account-settings/change-email/',
     name: 'Change Email',
   },
   {
-    href: '/change-password/',
+    href: '/account-settings/change-password/',
     name: 'Change Password',
   },
   {
-    href: '/close-account/',
+    href: '/account-settings/close-account/',
     name: 'Close Account',
   },
   {
-    href: '/linked-accounts/',
+    href: '/account-settings/linked-accounts/',
     name: 'Linked Accounts',
   },
 ];
