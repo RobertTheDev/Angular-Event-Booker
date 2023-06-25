@@ -3,32 +3,32 @@ const profileMenuLinks: {
   name: string;
 }[] = [
   {
-    href: '/',
+    href: '/profile',
     name: 'My Profile',
   },
 
   {
-    href: '/',
+    href: '/profile/my-events',
     name: 'Manage Events',
   },
   {
-    href: '/',
+    href: '/profile/my-tickets',
     name: 'Tickets',
   },
   {
-    href: '/',
+    href: '/profile/following',
     name: 'Following',
   },
   {
-    href: '/',
+    href: '/profile/edit-profile',
     name: 'Edit Profile',
   },
   {
-    href: '/',
+    href: '/profile/account-settings',
     name: 'Account Settings',
   },
   {
-    href: '/',
+    href: '/log-out',
     name: 'Log Out',
   },
 ];
