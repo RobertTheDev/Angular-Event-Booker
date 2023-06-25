@@ -43,12 +43,7 @@ export class HeaderComponent {
     }
   }
 
-  openProfileMenu() {
-    this.profileMenu = true;
-  }
-
-  closeProfileMenu() {
-    this.profileMenu = false;
-    this.isProfileMenuActive = false;
+  toggleProfileMenu() {
+    this.profileMenu = !this.profileMenu;
   }
 }

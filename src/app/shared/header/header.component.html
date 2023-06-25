@@ -66,29 +66,34 @@
         </div>
       </div>
 
-      <div
-        class="header-control-container"
-        (mouseover)="openProfileMenu()"
-        (mouseout)="closeProfileMenu()"
-        routerLink="/profile"
-      >
-        <button class="header-control-button" routerLink="/profile">
+      <div class="header-control-container">
+        <button
+          class="header-control-button"
+          (mouseover)="handleMouseOver('profile')"
+          (mouseout)="handleMouseOut('profile')"
+          (click)="toggleProfileMenu()"
+        >
           <fa-icon [icon]="faUser"></fa-icon>
         </button>
         <div
+          class="header-control-name-container"
+          *ngIf="controlNameActive === 'profile'"
+        >
+          <p class="header-control-name-text">Profile</p>
+        </div>
+        <div
           *ngIf="profileMenu || isProfileMenuActive"
           class="header-control-profile-menu-container"
-          (mouseover)="handleMouseOver('profileMenu')"
-          (mouseout)="handleMouseOut('profileMenu')"
         >
-          <button
+          <a
             class="header-control-profile-menu-link-container"
             *ngFor="let profileMenuLink of profileMenuLinks"
+            routerLink="{{ profileMenuLink.href }}"
           >
             <p class="header-control-profile-menu-link-text">
               {{ profileMenuLink.name }}
             </p>
-          </button>
+          </a>
         </div>
       </div>
     </div>
