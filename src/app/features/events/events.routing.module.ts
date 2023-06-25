@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { EventsComponent } from './events/events.component';
 import { EventComponent } from './event/event.component';
 import { OrganiseEventComponent } from './organise-event/organise-event.component';
+import { CreateEventComponent } from './create-event/create-event.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
       {
         path: '',
         component: EventsComponent,
+      },
+      {
+        path: 'create-event',
+        component: CreateEventComponent,
       },
       {
         path: 'organise-event',
