@@ -107,6 +107,7 @@ import { HomeRoutingModule } from './features/home/home.routing.module';
 import { AuthRoutingModule } from './features/auth/auth.routing.module';
 import { InfoRoutingModule } from './features/info/info.routing.module';
 import { EventsRoutingModule } from './features/events/events.routing.module';
+import { ProfileRoutingModule } from './features/profile/profile.routing.module';
 
 const routes: Routes = [];
 
@@ -117,6 +118,7 @@ const routes: Routes = [];
     EventsRoutingModule,
     HomeRoutingModule,
     InfoRoutingModule,
+    ProfileRoutingModule,
     NotFoundRoutingModule,
   ],
   exports: [RouterModule],
