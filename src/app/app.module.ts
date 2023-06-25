@@ -14,6 +14,7 @@ import { NotFoundModule } from './features/not-found/not-found.module';
 import { AuthModule } from './features/auth/auth.module';
 
 import { SharedModule } from './shared/shared.module';
+import { AccountSettingsModule } from './features/account-settings/account-settings.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import { SharedModule } from './shared/shared.module';
     OrganisationsModule,
     InfoModule,
     EventsModule,
+    AccountSettingsModule,
     NotFoundModule,
     SharedModule,
   ],

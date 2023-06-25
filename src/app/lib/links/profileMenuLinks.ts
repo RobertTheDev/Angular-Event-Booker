@@ -24,7 +24,7 @@ const profileMenuLinks: {
     name: 'Edit Profile',
   },
   {
-    href: '/profile/account-settings',
+    href: '/account-settings',
     name: 'Account Settings',
   },
   {

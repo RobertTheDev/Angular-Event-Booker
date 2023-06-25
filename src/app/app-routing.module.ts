@@ -108,6 +108,8 @@ import { AuthRoutingModule } from './features/auth/auth.routing.module';
 import { InfoRoutingModule } from './features/info/info.routing.module';
 import { EventsRoutingModule } from './features/events/events.routing.module';
 import { ProfileRoutingModule } from './features/profile/profile.routing.module';
+import { AccountSettingsModule } from './features/account-settings/account-settings.module';
+import { AccountSettingsRoutingModule } from './features/account-settings/account-settings.routing.module';
 
 const routes: Routes = [];
 
@@ -119,6 +121,7 @@ const routes: Routes = [];
     HomeRoutingModule,
     InfoRoutingModule,
     ProfileRoutingModule,
+    AccountSettingsRoutingModule,
     NotFoundRoutingModule,
   ],
   exports: [RouterModule],
