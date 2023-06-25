@@ -23,10 +23,6 @@ const accountSettingsLinks = [
     href: '/account-settings/close-account/',
     name: 'Close Account',
   },
-  {
-    href: '/account-settings/linked-accounts/',
-    name: 'Linked Accounts',
-  },
 ];
 
 export default accountSettingsLinks;
