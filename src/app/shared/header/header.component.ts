@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 import {
   faBell,
   faHeart,
@@ -27,6 +27,8 @@ export class HeaderComponent {
   isProfileMenuActive = false;
   profileMenuLinks = profileMenuLinks;
 
+  constructor(private elementRef: ElementRef) {}
+
   handleMouseOver(controlName: string) {
     if (controlName === 'profileMenu') {
       this.isProfileMenuActive = true;
@@ -40,6 +42,13 @@ export class HeaderComponent {
       this.isProfileMenuActive = false;
     } else if (this.controlNameActive === controlName) {
       this.controlNameActive = null;
+    }
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClick(event: Event): void {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.profileMenu = false;
     }
   }
 

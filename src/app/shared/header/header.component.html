@@ -84,6 +84,7 @@
         <div
           *ngIf="profileMenu || isProfileMenuActive"
           class="header-control-profile-menu-container"
+          [ngClass]="{ active: profileMenu }"
         >
           <a
             class="header-control-profile-menu-link-container"
