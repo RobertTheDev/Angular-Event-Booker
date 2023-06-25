@@ -20,7 +20,7 @@
           class="header-control-button"
           (mouseover)="handleMouseOver('notifications')"
           (mouseout)="handleMouseOut('notifications')"
-          routerLink="/profile"
+          routerLink="/notifications"
         >
           <fa-icon [icon]="faBell"></fa-icon>
         </button>
@@ -37,7 +37,7 @@
           class="header-control-button"
           (mouseover)="handleMouseOver('likes')"
           (mouseout)="handleMouseOut('likes')"
-          routerLink="/profile"
+          routerLink="/likes"
         >
           <fa-icon [icon]="faHeart"></fa-icon>
         </button>
@@ -54,7 +54,7 @@
           class="header-control-button"
           (mouseover)="handleMouseOver('tickets')"
           (mouseout)="handleMouseOut('tickets')"
-          routerLink="/profile"
+          routerLink="/my-tickets"
         >
           <fa-icon [icon]="faTicket"></fa-icon>
         </button>
@@ -70,6 +70,7 @@
         class="header-control-container"
         (mouseover)="openProfileMenu()"
         (mouseout)="closeProfileMenu()"
+        routerLink="/profile"
       >
         <button class="header-control-button" routerLink="/profile">
           <fa-icon [icon]="faUser"></fa-icon>

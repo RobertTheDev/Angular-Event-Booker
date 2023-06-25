@@ -23,7 +23,7 @@ export class HeaderComponent {
   faTicket = faTicket;
   controlNameActive: string | null = null;
   profileMenu = false;
-  signedIn = false;
+  signedIn = true;
   isProfileMenuActive = false;
   profileMenuLinks = profileMenuLinks;
 
