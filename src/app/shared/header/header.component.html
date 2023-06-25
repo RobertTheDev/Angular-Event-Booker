@@ -86,15 +86,15 @@
           class="header-control-profile-menu-container"
           [ngClass]="{ active: profileMenu }"
         >
-          <a
+          <button
             class="header-control-profile-menu-link-container"
             *ngFor="let profileMenuLink of profileMenuLinks"
-            routerLink="{{ profileMenuLink.href }}"
+            (click)="navigateToProfileLink(profileMenuLink.href)"
           >
             <p class="header-control-profile-menu-link-text">
               {{ profileMenuLink.name }}
             </p>
-          </a>
+          </button>
         </div>
       </div>
     </div>
