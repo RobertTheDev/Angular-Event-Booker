@@ -6,6 +6,7 @@ import { CloseAccountComponent } from './views/close-account/close-account.compo
 import { ChangePasswordComponent } from './views/change-password/change-password.component';
 import { ChangeEmailComponent } from './views/change-email/change-email.component';
 import { AddPaymentCardComponent } from './views/add-payment-card/add-payment-card.component';
+import { VerifyAccountComponent } from './views/verify-account/verify-account.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'change-password', component: ChangePasswordComponent },
       { path: 'close-account', component: CloseAccountComponent },
       { path: 'linked-accounts', component: LinkedAccountsComponent },
+      { path: 'verify-account', component: VerifyAccountComponent },
     ],
   },
 ];

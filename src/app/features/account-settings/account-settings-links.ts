@@ -16,6 +16,10 @@ const accountSettingsLinks = [
     name: 'Change Password',
   },
   {
+    href: '/account-settings/verify-account/',
+    name: 'Verify Account',
+  },
+  {
     href: '/account-settings/close-account/',
     name: 'Close Account',
   },

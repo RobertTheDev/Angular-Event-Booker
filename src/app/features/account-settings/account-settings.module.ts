@@ -8,6 +8,7 @@ import { CloseAccountComponent } from './views/close-account/close-account.compo
 import { AccountInfoComponent } from './views/account-info/account-info.component';
 import { AccountSettingsMenuComponent } from './components/account-settings-menu/account-settings-menu.component';
 import { AccountSettingsLayoutComponent } from './components/account-settings-layout/account-settings-layout.component';
+import { VerifyAccountComponent } from './views/verify-account/verify-account.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AccountSettingsLayoutComponent } from './components/account-settings-la
     LinkedAccountsComponent,
     CloseAccountComponent,
     AccountInfoComponent,
+    VerifyAccountComponent,
   ],
   imports: [CommonModule],
 })
