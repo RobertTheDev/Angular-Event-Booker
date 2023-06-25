@@ -15,14 +15,7 @@ const profileMenuLinks: {
     href: '/profile/my-tickets',
     name: 'Tickets',
   },
-  {
-    href: '/profile/following',
-    name: 'Following',
-  },
-  {
-    href: '/profile/edit-profile',
-    name: 'Edit Profile',
-  },
+
   {
     href: '/account-settings',
     name: 'Account Settings',
