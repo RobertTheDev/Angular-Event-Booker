@@ -7,7 +7,7 @@ const profileMenuLinks: {
     name: 'Manage Events',
   },
   {
-    href: '/profile/my-organisations',
+    href: '/organisations/manage-organisations',
     name: 'Manage Organisations',
   },
   {
