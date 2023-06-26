@@ -8,6 +8,7 @@ import { MyOrganisationsComponent } from './views/my-organisations/my-organisati
 import { SelectOrganisationCardComponent } from './components/select-organisation-card/select-organisation-card.component';
 import { ManageOrganisationCardComponent } from './components/manage-organisation-card/manage-organisation-card.component';
 import { OrganisationCardComponent } from './components/organisation-card/organisation-card.component';
+import { ManageOrganisationsComponent } from './views/manage-organisations/manage-organisations.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { OrganisationCardComponent } from './components/organisation-card/organi
     SelectOrganisationCardComponent,
     ManageOrganisationCardComponent,
     OrganisationCardComponent,
+    ManageOrganisationsComponent,
   ],
   imports: [CommonModule],
 })
