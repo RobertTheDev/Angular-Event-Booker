@@ -4,6 +4,7 @@ import { OrganisationsComponent } from './views/organisations/organisations.comp
 import { OrganisationComponent } from './views/organisation/organisation.component';
 import { EditOrganisationComponent } from './views/edit-organisation/edit-organisation.component';
 import { CreateOrganisationComponent } from './views/create-organisation/create-organisation.component';
+import { MyOrganisationsComponent } from './views/my-organisations/my-organisations.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: ':id', component: OrganisationComponent },
       { path: ':id/edit-organisation', component: EditOrganisationComponent },
       { path: 'create-organisation', component: CreateOrganisationComponent },
+      { path: 'my-organisations', component: MyOrganisationsComponent },
     ],
   },
 ];
