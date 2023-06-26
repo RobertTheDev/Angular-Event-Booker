@@ -11,9 +11,16 @@
     />
   </div>
   <div class="event-card-content-container">
-    <p>{{ event.name }}</p>
-    <p>{{ event.startDate }}</p>
-    <p>{{ event.location.address }}</p>
-    <p>{{ event.price.total }}</p>
+    <p class="event-card-title">{{ event.name }}</p>
+    <p>{{ format(event.startDate, "EE, MMMM d, HH:mm") }}</p>
+    <p>{{ event.location.address }}, {{ event.location.town }}</p>
+    <p>Starts at £{{ event.price.total }}</p>
+    <div class="event-card-organisation-container">
+      <img
+        class="event-card-organisation-logo"
+        src="{{ event.organisation.logo.url }}"
+      />
+      <p class="event-card-organisation-text">{{ event.organisation.name }}</p>
+    </div>
   </div>
 </div>
