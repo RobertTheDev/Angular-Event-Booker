@@ -1,0 +1,25 @@
+const eventCategories = [
+  'Auto, Boat and Air',
+  'Business and Professional',
+  'Charities and Causes',
+  'Community and Culture',
+  'Family and Education',
+  'Fashion and Beauty',
+  'Film, Media and Entertainment',
+  'Food and Drink',
+  'Government and Politics',
+  'Health and Wellness',
+  'Hobbies and Special Interests',
+  'Home and Lifestyle',
+  'Music',
+  'Other',
+  'Performing and Visual Arts',
+  'Religion and Spirituality',
+  'School Activities',
+  'Science and Technology',
+  'Seasonal',
+  'Sports and Fitness',
+  'Travel and Outdoor',
+];
+
+export default eventCategories;
