@@ -1,44 +1,60 @@
-<div>
-  <img src="{{ event?.image?.url }}" alt="{{ event?.image?.alt }}" />
-  <p>{{ formatDate(event!.startDate, "d MMMM") }}</p>
-  <button>Save Event</button>
-  <p>{{ event?.name }}</p>
-  <p>{{ event?.headline }}</p>
-  <p>£{{ event?.price?.total }}</p>
-  <p>{{ event?.spacesBooked }} booked out of {{ event?.spacesTotal }}</p>
-  <p>{{ event!.spacesTotal - event!.spacesBooked }} available</p>
-  <button>Book Event</button>
-  <!-- <img src="{{ event?.organisation?.logo?.url }}" /> -->
-  <!-- <p>{{ event?.organisation?.name }}</p>
+<div class="event-page-container">
+  <div class="event-page-image-container">
+    <img
+      class="event-page-image"
+      src="{{ event?.image?.url }}"
+      alt="{{ event?.image?.alt }}"
+    />
+  </div>
+  <div class="event-page-body-container">
+    <div class="event-page-content-container">
+      <p>{{ formatDate(event!.startDate, "d MMMM") }}</p>
+      <button>Save Event</button>
+      <p class="event-page-heading">{{ event?.name }}</p>
+      <p class="event-page-headline">{{ event?.headline }}</p>
+      <p>£{{ event?.price?.total }}</p>
+      <p>{{ event?.spacesBooked }} booked out of {{ event?.spacesTotal }}</p>
+      <p>{{ event!.spacesTotal - event!.spacesBooked }} available</p>
+
+      <!-- <img src="{{ event?.organisation?.logo?.url }}" /> -->
+      <!-- <p>{{ event?.organisation?.name }}</p>
   <p>{{ event?.organisation?.totalFollowers?.toLocaleString() }} followers</p> -->
-  <button>Follow</button>
+      <button>Follow</button>
 
-  <p>when and where</p>
-  <p>
-    {{ formatDate(event!.startDate, "EE, d MMM yyyy HH:MM") }} -
-    {{ formatDate(event!.endDate, "EE, d MMM yyyy HH:MM") }}
-  </p>
+      <p class="event-page-subheading">When and Where</p>
+      <p>
+        {{ formatDate(event!.startDate, "EE, d MMM yyyy HH:MM") }} -
+        {{ formatDate(event!.endDate, "EE, d MMM yyyy HH:MM") }}
+      </p>
 
-  <p>location</p>
-  <p>{{ event?.location?.address }}</p>
-  <p>{{ event?.location?.town }}</p>
-  <p>{{ event?.location?.country }}</p>
+      <p class="event-page-subheading">Location</p>
+      <p>{{ event?.location?.address }}</p>
+      <p>{{ event?.location?.town }}</p>
+      <p>{{ event?.location?.country }}</p>
 
-  <p>refund policy</p>
+      <p class="event-page-subheading">Refund Policy</p>
 
-  <p>About this event</p>
-  <p>{{ event?.duration?.length }} {{ event?.duration?.unit }}</p>
-  <p>{{ event?.ticketType }}</p>
-  <p>{{ event?.about }}</p>
+      <p class="event-page-subheading">About this event</p>
+      <div class="event-page-detail-group">
+        <p>{{ event?.duration?.length }} {{ event?.duration?.unit }}</p>
+        <p>{{ event?.ticketType }}</p>
+      </div>
+      <p class="text-base">{{ event?.about }}</p>
 
-  <p>About the organiser</p>
-  <!-- <img src="{{ event?.organisation?.logo?.url }}" /> -->
-  <!-- <p>Organised by {{ event?.organisation?.name }}</p>
+      <p class="event-page-subheading">About the organiser</p>
+      <!-- <img src="{{ event?.organisation?.logo?.url }}" /> -->
+      <!-- <p>Organised by {{ event?.organisation?.name }}</p>
   <p>{{ event?.organisation?.totalFollowers?.toLocaleString() }} followers</p> -->
-  <button>Follow</button>
-  <button>Facebook</button>
-  <button>Instagram</button>
-  <button>Twitter</button>
+      <button>Follow</button>
+      <button>Facebook</button>
+      <button>Instagram</button>
+      <button>Twitter</button>
 
-  <button>Report this event</button>
+      <button>Report this event</button>
+    </div>
+    <div class="event-page-book-container">
+      <p class="event-page-book-text">Book</p>
+      <button class="event-page-book-button">Book Event</button>
+    </div>
+  </div>
 </div>
