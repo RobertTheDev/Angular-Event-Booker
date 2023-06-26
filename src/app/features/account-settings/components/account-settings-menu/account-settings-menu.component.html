@@ -1,5 +1,9 @@
-<div *ngFor="let accountSettingsLink of accountSettingsLinks">
-  <button (click)="navigateToLink(accountSettingsLink.href)">
+<div class="account-settings-menu-container">
+  <button
+    class="account-settings-menu-button"
+    *ngFor="let accountSettingsLink of accountSettingsLinks"
+    (click)="navigateToLink(accountSettingsLink.href)"
+  >
     {{ accountSettingsLink.name }}
   </button>
 </div>

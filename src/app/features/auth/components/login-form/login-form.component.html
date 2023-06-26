@@ -1,45 +1,53 @@
-<p>Login</p>
-<form (ngSubmit)="alert()" class="auth-form-container" [formGroup]="loginForm">
-  <input
-    id="email"
-    class="auth-form-input"
-    name="email"
-    placeholder="Email Address"
-    type="email"
-    formControlName="email"
-  />
-
-  <div
-    *ngIf="(submitted && email?.invalid) || (email?.touched && email?.invalid)"
-    class="auth-form-error-text"
+<div>
+  <p>Login</p>
+  <form
+    (ngSubmit)="alert()"
+    class="primary-form-container"
+    [formGroup]="loginForm"
   >
-    <div *ngIf="email?.errors?.['required']">Email is required.</div>
-    <div *ngIf="email?.errors?.['email']">Invalid email format.</div>
-  </div>
+    <input
+      id="email"
+      class="primary-form-input"
+      name="email"
+      placeholder="Email Address"
+      type="email"
+      formControlName="email"
+    />
 
-  <input
-    id="password"
-    class="auth-form-input"
-    name="password"
-    placeholder="Password"
-    type="password"
-    formControlName="password"
-  />
-
-  <div
-    *ngIf="
-      (submitted && password?.invalid) ||
-      (password?.touched && password?.invalid)
-    "
-    class="auth-form-error-text"
-  >
-    <div *ngIf="password?.errors?.['required']">Password is required.</div>
-    <div *ngIf="password?.errors?.['minlength']">
-      Password must be at least 8 characters long.
+    <div
+      *ngIf="
+        (submitted && email?.invalid) || (email?.touched && email?.invalid)
+      "
+      class="auth-form-error-text"
+    >
+      <div *ngIf="email?.errors?.['required']">Email is required.</div>
+      <div *ngIf="email?.errors?.['email']">Invalid email format.</div>
     </div>
-  </div>
 
-  <button class="auth-form-button">Login</button>
+    <input
+      id="password"
+      class="primary-form-input"
+      name="password"
+      placeholder="Password"
+      type="password"
+      formControlName="password"
+    />
 
-  <a routerLink="/auth/sign-up">Sign Up</a>
-</form>
+    <div
+      *ngIf="
+        (submitted && password?.invalid) ||
+        (password?.touched && password?.invalid)
+      "
+      class="auth-form-error-text"
+    >
+      <div *ngIf="password?.errors?.['required']">Password is required.</div>
+      <div *ngIf="password?.errors?.['minlength']">
+        Password must be at least 8 characters long.
+      </div>
+    </div>
+
+    <button class="auth-form-button">Login</button>
+
+    <a routerLink="/auth/sign-up">Sign Up</a>
+  </form>
+</div>

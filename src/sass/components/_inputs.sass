@@ -1,8 +1,27 @@
-.primary-input
-	width: 100%
-	height: 3.2rem
-	border-radius: 4px
-	border: 1px solid lightgray
-	padding: 0 8px
-	box-sizing: border-box
-	outline-color: #f05637
+.primary-form
+	&-container
+		width: 70%
+		display: flex
+		gap: $spacer-md
+		flex-direction: column
+
+	&-row
+		align-items: center
+		display: flex
+		gap: $spacer-lg
+		width: 100%
+		flex: 1
+	&-input
+		height: 2.5rem
+		border-radius: 4px
+		border: 1px solid lightgray
+		padding: 0 8px
+		box-sizing: border-box
+		outline-color: $color-primary-600
+		width: 100%
+		flex: 1
+		&-container
+			width: 100%
+		&-title
+			font-size: $font-size-sm
+			line-height: $line-height-sm
