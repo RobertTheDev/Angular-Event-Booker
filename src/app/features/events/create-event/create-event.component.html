@@ -1,38 +1,39 @@
 <!-- BASIC INFO -->
-<!-- <p>Basic Info</p>
+<p>BASIC INFO</p>
 <p>
   Name your event and tell event-goers why they should come. Add details that
   highlight what makes it unique.
 </p>
 <p>Event title</p>
-<input placeholder="title" />
+<input
+  type="text"
+  [(ngModel)]="inputText"
+  (input)="checkCharacterLimit()"
+  (keydown)="limitCharacterInput($event)"
+/>
 
-<p>Organiser</p>
-<input placeholder="organiser" />
-
+<p>Character count: {{ inputText.length }} / {{ maxCharacterLimit }}</p>
 <p>Type</p>
 <select>
-  <option>A</option>
-  <option>B</option>
+  <option *ngFor="let eventType of eventTypes">{{ eventType }}</option>
 </select>
 
 <p>Category</p>
 <select>
-  <option>A</option>
-  <option>B</option>
-</select> -->
+  <option *ngFor="let eventCategory of eventCategories">
+    {{ eventCategory }}
+  </option>
+</select>
 
-<!-- <button>Venue</button>
+<p>LOCATION</p>
+
+<button>Venue</button>
 <button>Online Event</button>
 <p>Location</p>
-<input name="address" placeholder="Address" />
-<input name="postCode" placeholder="Post Code" />
-<input name="town" placeholder="Town" />
-<input name="region" placeholder="Region" />
-<input name="country" placeholder="Country" /> -->
+<input placeholder="Venu Name" />
 
 <!-- DATE -->
-<p>Date and time</p>
+<p>DATE AND TIME</p>
 <p>
   Tell event-goers when your event starts and ends so they can make plans to
   attend.
