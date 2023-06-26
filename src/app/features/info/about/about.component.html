@@ -1,4 +1,8 @@
 <div class="info-page">
+  <div *ngIf="page$ | async as page">
+    {{ page | json }}
+  </div>
+
   <div class="about-page-banner-container">
     <img
       class="about-page-banner-image"
