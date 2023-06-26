@@ -44,10 +44,7 @@ Thumbs.db
 /modules
 /views
 
-<<<<<<< HEAD
-/environments
-=======
+ 
 /src/app/environments/environment.ts
 /src/app/environments/environment.prod.ts
->>>>>>> 322f7d2 (Updated GitIgnore)
  
