@@ -5,16 +5,17 @@ import { OrganisationComponent } from './views/organisation/organisation.compone
 import { EditOrganisationComponent } from './views/edit-organisation/edit-organisation.component';
 import { CreateOrganisationComponent } from './views/create-organisation/create-organisation.component';
 import { MyOrganisationsComponent } from './views/my-organisations/my-organisations.component';
+import { ManageOrganisationsComponent } from './views/manage-organisations/manage-organisations.component';
 
 const routes: Routes = [
   {
     path: 'organisations',
     children: [
       { path: '', component: OrganisationsComponent },
+      { path: 'create-organisation', component: CreateOrganisationComponent },
+      { path: 'manage-organisations', component: ManageOrganisationsComponent },
       { path: ':id', component: OrganisationComponent },
       { path: ':id/edit-organisation', component: EditOrganisationComponent },
-      { path: 'create-organisation', component: CreateOrganisationComponent },
-      { path: 'my-organisations', component: MyOrganisationsComponent },
     ],
   },
 ];
