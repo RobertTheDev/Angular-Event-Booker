@@ -15,6 +15,7 @@ import { AuthModule } from './features/auth/auth.module';
 
 import { SharedModule } from './shared/shared.module';
 import { AccountSettingsModule } from './features/account-settings/account-settings.module';
+import { SupabaseService } from './services/supabase/supabase.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,7 +33,7 @@ import { AccountSettingsModule } from './features/account-settings/account-setti
     NotFoundModule,
     SharedModule,
   ],
-  providers: [],
+  providers: [SupabaseService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
