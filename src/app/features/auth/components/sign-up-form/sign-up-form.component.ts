@@ -6,6 +6,7 @@ import {
   ValidatorFn,
   Validators,
 } from '@angular/forms';
+import { SupabaseService } from 'src/app/services/supabase/supabase.service';
 
 export const passwordMismatch: ValidatorFn = (
   control: AbstractControl
@@ -23,7 +24,12 @@ export const passwordMismatch: ValidatorFn = (
   templateUrl: './sign-up-form.component.html',
 })
 export class SignUpFormComponent {
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private readonly fb: FormBuilder,
+    private readonly supabase: SupabaseService
+  ) {}
+
+  loading = false;
 
   submitted = false;
 
@@ -51,16 +57,26 @@ export class SignUpFormComponent {
     return this.signUpForm.get('lastName');
   }
 
-  get password() {
-    return this.signUpForm.get('password');
-  }
-
-  get confirmPassword() {
-    return this.signUpForm.get('confirmPassword');
-  }
-
   get termsAccepted() {
     return this.signUpForm.get('termsAccepted');
+  }
+
+  async onSubmit(): Promise<void> {
+    try {
+      this.loading = true;
+      const email = this.signUpForm.value.email as string;
+
+      const { error } = await this.supabase.signIn(email);
+      if (error) throw error;
+      alert('Check your email for the login link!');
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(error.message);
+      }
+    } finally {
+      this.signUpForm.reset();
+      this.loading = false;
+    }
   }
 
   alert() {

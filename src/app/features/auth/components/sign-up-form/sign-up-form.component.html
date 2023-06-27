@@ -1,5 +1,9 @@
 <p>Sign Up</p>
-<form (ngSubmit)="alert()" class="auth-form-container" [formGroup]="signUpForm">
+<form
+  (ngSubmit)="onSubmit()"
+  class="auth-form-container"
+  [formGroup]="signUpForm"
+>
   <input
     id="email"
     class="auth-form-input"
@@ -59,61 +63,6 @@
     </div>
   </div>
 
-  <input
-    id="password"
-    class="auth-form-input"
-    name="password"
-    placeholder="Password"
-    type="password"
-    formControlName="password"
-  />
-
-  <div
-    *ngIf="
-      (submitted && password?.invalid) ||
-      (password?.touched && password?.invalid)
-    "
-    class="auth-form-error-text"
-  >
-    <div *ngIf="password?.errors?.['required']">Password is required.</div>
-    <div *ngIf="password?.errors?.['minlength']">
-      Password must be at least 8 characters long.
-    </div>
-  </div>
-
-  <input
-    id="confirmPassword"
-    class="auth-form-input"
-    name="confirmPassword"
-    placeholder="ConfirmPassword"
-    type="password"
-    formControlName="confirmPassword"
-  />
-  <div
-    *ngIf="
-      (submitted && confirmPassword?.invalid) ||
-      (confirmPassword?.touched && confirmPassword?.invalid)
-    "
-    class="auth-form-error-text"
-  >
-    <div *ngIf="confirmPassword?.errors?.['required']">
-      Confirm Password is required.
-    </div>
-    <div *ngIf="confirmPassword?.errors?.['minlength']">
-      Confirm Password must be at least 8 characters long.
-    </div>
-  </div>
-
-  <div
-    *ngIf="
-    (submitted && confirmPassword?.invalid && signUpForm.errors?.['passwordMismatch']) ||
-    (confirmPassword?.touched && password?.touched && signUpForm.errors?.['passwordMismatch']) 
-  "
-    class="cross-validation-error-message alert alert-danger"
-  >
-    Password and confirm password does not match.
-  </div>
-
   <input type="checkbox" id="termsAccepted" formControlName="termsAccepted" />
 
   <div
@@ -128,7 +77,9 @@
     </div>
   </div>
 
-  <button class="auth-form-button">Sign Up</button>
+  <button type="submit" class="auth-form-button" [disabled]="loading">
+    {{ loading ? "Loading" : "Sign Up" }}
+  </button>
 
-  <a routerLink="/auth/sign-up">Sign Up</a>
+  <a routerLink="/auth/login">Login</a>
 </form>
