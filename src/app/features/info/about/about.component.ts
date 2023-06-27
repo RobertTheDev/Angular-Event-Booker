@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ContentfulService } from 'src/app/services/contentful.service';
+import { ContentfulService } from 'src/app/services/contentful/contentful.service';
 
 @Component({
   selector: 'app-about',
